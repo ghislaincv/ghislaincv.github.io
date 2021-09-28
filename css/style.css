@@ -1,0 +1,136 @@
+/* ================= TOUS LES MEDIAS ================= */
+
+*:focus {
+    border: none;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #e3f2fd;
+    padding: 0;
+    margin: 0;
+}
+
+a.active {
+    background-color: #ff0000a2;
+    width: 170px;
+    margin: auto;
+    border-radius: 999px;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.bg-primary {
+    background-color: #0d47a1 !important;
+}
+
+.bg-primary a {
+    color: #fff;
+}
+
+section .heading {
+    color: #ff0000a2;
+    border-bottom: 2px solid #ff0000a2;
+    width: 100%;
+}
+
+section li span {
+    color: green;
+    font-weight: bold;
+}
+
+section ul {
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+section li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+svg {
+    font-weight: bold;
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-haut {
+    bottom: 3vh;
+    right: 5vw;
+    z-index: 1000;
+}
+
+section#contact {
+    padding-top: 80px;
+}
+
+.icon-haut svg {
+    width: 30px;
+    height: 30px;
+    color: red;
+}
+
+
+/* ================= SMARTPHONE ET TABLETTE ================= */
+
+@media (max-width:991.98px) {
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    .logo {
+        font-size: 1.1rem;
+    }
+    #moi {
+        display: flex;
+        align-items: center;
+        background-color: #0d47a1;
+        color: white;
+    }
+    #moi .heading {
+        font-size: 1.3rem;
+    }
+    #moi img {
+        width: 190px;
+        border: 5px solid white;
+    }
+    #moi h4 {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* ================= PC ET PLUS ================= */
+
+@media (min-width:992px) {
+    header {
+        position: fixed;
+        top: 0;
+        width: 23%;
+    }
+    nav#navbar {
+        min-height: 100vh;
+    }
+    #navbar .navbar-brand {
+        margin-right: 0;
+    }
+    #navbar .navbar-brand img {
+        border: 5px solid white;
+        width: 13rem;
+    }
+    section {
+        margin-left: 23%;
+    }
+    section .heading {
+        margin: auto;
+    }
+}
